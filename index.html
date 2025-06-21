@@ -215,26 +215,22 @@
 .wa-button:hover {
   background-color: #128C7E;
 }
-.grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .testimonial-grid {
+
+   .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   justify-items: center;
   align-items: center;
   padding: 20px;
 }
+
 .testimonial-grid img {
   width: 100%;
-  max-width: 150px;
+  max-width: 200px;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
   </style>
 <style>
   .floating-chat {
@@ -296,13 +292,20 @@ ul.checklist li::before {
     }
 
     .testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  justify-items: center;
-  align-items: center;
-  padding: 20px;
-}
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+      gap: 15px;
+      justify-items: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .testimonial-grid img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+      display: block;
+    }
 </style>
 
 <div id="chat1" class="floating-chat">💬 “Awalnya ragu, ternyata dibimbing dari nol sampai bisa! -Dinda”</div>
@@ -538,7 +541,7 @@ Setelah join nanti akan langsung masuk grup bimbingan dan mendapatkan full bimbi
 
 
   <section>
-  <h2 class="section-title">Testimoni</h2>
+  <h2 class="section-title">Testimoni Member Sukses</h2>
   <div class="testimonial-slider">
     <div class="slides">
       <img src="testimoni1.jpg" alt="Testimoni 1">
@@ -553,7 +556,7 @@ Setelah join nanti akan langsung masuk grup bimbingan dan mendapatkan full bimbi
   </div>
 </section>
  <section>
-
+<h2 class="section-title">Bukti Join</h2>
   <div class="testimonial-grid">
     <img src="testi1.jpg" alt="Testimoni 1">
     <img src="testi2.jpg" alt="Testimoni 2">
